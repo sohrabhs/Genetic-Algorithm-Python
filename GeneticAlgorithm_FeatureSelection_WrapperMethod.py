@@ -1,4 +1,4 @@
-class GeneticAlgorithm_FeatureSelection_WrapperMethod(GeneticAlgorithm, FeatureSelection):
+class GeneticAlgorithm_FeatureSelection_WrapperMethod(GeneticAlgorithm):
     def __init__(self, X_train, y_train, X_test, y_test, wrapperModel, iteration, populationSize,
                  crossover_rate, mutation_rate, silent=True):
         self.iteration = iteration
