@@ -1,6 +1,6 @@
 import numpy as np
 
-class GeneticAlgorithm(Optimization):
+class GeneticAlgorithm:
     def __init__(self, it=100, popSize=100, rc=0.8, rm=0.05, minimization=True, silent=True):
         self.minimization = minimization
         self.silent = silent
@@ -10,7 +10,6 @@ class GeneticAlgorithm(Optimization):
         self.nm = round(rm * popSize)
         self.bestSolution = None
         self.bestObj = None
-        super().__init__()
 
     def sortedFirstBySecond(self, first, second, reverse=False):
         index = np.array(sorted(range(len(second)), key=lambda k: second[k], reverse=reverse))
